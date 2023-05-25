@@ -17,7 +17,7 @@ def index(request):
     form = CityForm()
     weather_data = []
     for city in cities:
-            appid = 'c963570646cbd18b5d444a634407f504'
+            appid = ''
             city = str(city)
             urlGeo = 'http://api.openweathermap.org/geo/1.0/direct?q='+ city +'&appid=' + appid
             city_locaton = requests.get(urlGeo).json()
